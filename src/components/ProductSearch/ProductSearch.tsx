@@ -1,6 +1,8 @@
 import { Button } from '../Button';
 import { Searchbar } from '../Searchbar';
 
+import styles from './ProductSearch.module.scss';
+
 interface Props {
   name: string;
   label: string;
