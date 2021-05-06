@@ -1,38 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-import { Card } from './components/Card';
-import { Header } from './components/Header';
-import { Product } from './models';
-
-const App: React.FC = () => {
-  const [search, setSearch] = useState<string>('');
-  // const [product, setProduct] = useState<Product>();
-  function handleChange(value: string) {
-    const val = value.trim();
-
-    setSearch(val);
-  }
-
-  function handleSubmit(evt: React.FormEvent) {
-    evt.preventDefault();
-
-    console.warn({ search });
-
-    setSearch('');
-  }
-
+function App() {
   return (
-    <>
-      <Header />
-      <Card
-        isDisabled={!search.length}
-        value={search}
-        onChange={handleChange}
-        onSubmit={handleSubmit}
-      />
-      <pre>{search}</pre>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
