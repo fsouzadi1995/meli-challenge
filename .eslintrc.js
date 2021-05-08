@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
-    extraFileExtensions: ['.scss', '.html'],
+    extraFileExtensions: [],
   },
   settings: {
     react: {
@@ -15,9 +15,10 @@ module.exports = {
     },
   },
   rules: {
-    'no-console': 'warn',
+    'no-console': 'off',
     'no-unused-vars': ['warn'],
     'import/order': ['warn', { 'newlines-between': 'always' }],
+    '@typescript-eslint/explicit-function-return-type': 'warn',
     'react/self-closing-comp': 'warn',
     'react-hooks/rules-of-hooks': 'warn',
     'react-hooks/exhaustive-deps': 'warn',

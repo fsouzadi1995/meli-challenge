@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.leftIcon {
+  position: absolute;
+  top: 25%;
+  left: 2.5%;
+}
+
+.rightIcon {
+  position: absolute;
+  top: 25%;
+  right: 2.5%;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  height: 3em;
+  padding: 0 3em;
+  font-size: 1rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+input:focus-within {
+  border: 1px solid dodgerblue;
+}
+
+input:placeholder {
+  color: gray;
+}

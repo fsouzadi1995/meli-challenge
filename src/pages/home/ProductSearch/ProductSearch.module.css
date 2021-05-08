@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media screen and (min-width: 769px) {
+  form > div {
+    flex-direction: row;
+  }
+}
